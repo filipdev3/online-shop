@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Shop</title>
+</head>
+<body>
+
+    <div class="loader-wrapper">
+        <div class="lds-facebook"><div></div><div></div><div></div></div>
+    </div>
+
+
+    <header>
+        <div class="pre-header">
+            <ul>
+                <li><a href="#">Our CVD response</a></li>
+                <li><a href="#">Downloads & Support</a></li>
+                <li><a href="#">EN</a></li>
+            </ul>
+        </div>
+        <nav>
+            <button id="hamburger-btn" class="hamburger-menu-button"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-times"></i></button>
+            <ul>
+                <li><a href="index.html"><img src="img/FILIP_logo.png" alt="logo"></a></li>
+                <li><a href="mice.html">Mice</a></li>
+                <li><a href="keyboards.html">Keyboards</a></li>
+                <li><a href="headset.html">Headsets</a></li>
+                <li><a href="mousepads.html">Mousepads</a></li>
+            </ul>
+
+            <div class="nav-right-side">
+                <a href="#" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="keyboard-hero">
+        <h4>gaming keyboards</h4>
+        <h1>feel the impact</h1>
+    </section>
+
+
+    <section class="products-sale">
+        <p class="products-heading">A quality keyboard is vital for both work and play. Whether you're mechanical purist, 
+        a couch gamer, a freak for extra functions or someone who wants it all - we've got you covered.</p>
+
+        <ul class="product-filters">
+            <li class="active all-filter" data-category="all">All products</li>
+            <li class="optical-filter" data-category="optical">Optical Switch </li>
+            <li class="mechanical-filter" data-category="mechanical">Mechanical Switch</li>
+            <li class="membrane-filter" data-category="membrane">Membrane</li>
+        </ul>
+
+        <div class="product-wrapper">
+            <div class="item" data-category="optical">
+                <img src="/img/key-product1.png" alt="keyboard">
+                <h4 class="item-name">Vulcan Pro</h4>
+                <p class="item-desc">Optical RGB Gaming Keyboard</p>
+            </div>
+
+            <div class="item" data-category="optical">
+                <img src="/img/key-product2.png" alt="keyboard">
+                <h4 class="item-name">Vulcan TKL Pro</h4>
+                <p class="item-desc">Compact Optical RGB Gaming Keyboard</p>
+            </div>
+
+            <div class="item" data-category="mechanical">
+                <img src="/img/key-product3.png" alt="keyboard">
+                <h4 class="item-name">Vulcan TKL</h4>
+                <p class="item-desc">Compact Mechanical RGB Gaming Keyboard</p>
+            </div>
+
+            <div class="item" data-category="mechanical">
+                <img src="/img/key-product4.png" alt="keyboard">
+                <h4 class="item-name">Vulcan TKL 3</h4>
+                <p class="item-desc">Mechanical RGB Gaming Keyboard</p>
+            </div>
+
+            <div class="item" data-category="mechanical">
+                <img src="/img/key-product5.png" alt="keyboard">
+                <h4 class="item-name">Vulcan PSG</h4>
+                <p class="item-desc">Compact Mechanical PSG Gaming Keyboard</p>
+            </div>
+
+            <div class="item" data-category="mechanical">
+                <img src="/img/key-product6.png" alt="keyboard">
+                <h4 class="item-name">Vulcan Yellow Green</h4>
+                <p class="item-desc">YG Gaming Keyboard</p>
+            </div>
+
+            <div class="item" data-category="optical">
+                <img src="/img/key-product7.png" alt="keyboard">
+                <h4 class="item-name">Vulcan Rainbow</h4>
+                <p class="item-desc">Optical RGB Gaming Keyboard</p>
+            </div>
+
+            <div class="item" data-category="membrane">
+                <img src="/img/key-product7.png" alt="keyboard">
+                <h4 class="item-name">Vulcan Rainbow</h4>
+                <p class="item-desc">Optical RGB Gaming Keyboard</p>
+            </div>
+
+            <div class="item" data-category="membrane">
+                <img src="/img/key-product7.png" alt="keyboard">
+                <h4 class="item-name">Vulcan Rainbow</h4>
+                <p class="item-desc">Optical RGB Gaming Keyboard</p>
+            </div>
+        </div>
+    </section>
+ 
+
+    <footer>
+        <img src="img/FILIP_logo.png" alt="logo">
+
+        <p class="copy-rights"><i class="fa-regular fa-copyright"></i> Filip Kulic 2024</p>
+
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+        </ul>
+        
+    </footer>
+
+
+    <div class="search-wrapper">
+        <a href="#" id="close-search"><i class="fa-solid fa-xmark"></i></a>
+        <form id="search-form" action="">
+            <input type="text" placeholder="Keywords...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+
+
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/filter_key_products.js"></script>
+<script src="https://kit.fontawesome.com/388c5686b7.js" crossorigin="anonymous"></script>
+<script src="js/animate.js"></script>
+</body>
+</html>

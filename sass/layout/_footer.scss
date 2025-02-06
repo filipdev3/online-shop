@@ -1,0 +1,54 @@
+@use "../variables";
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    background: radial-gradient(ellipse at center, rgba(48, 48, 48, 1) 0%, rgba(24, 24, 24, 1) 100%);
+
+    img {
+        background-color: transparent;
+    }
+
+    .copy-rights {
+        color: variables.$lightGray;
+        font-size: 1rem;
+
+        @media (max-width: 465px) {
+            font-size: 0.8rem;;
+        }
+    }
+
+    ul {
+        list-style: none;
+
+        @media (max-width: 376px){
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        li {
+            display: inline-block;
+            margin-left: 0.8rem;
+
+            @media (max-width: 376px){
+                width: 30%;
+                margin-left: 0.3rem;
+            }
+
+            a {
+                color: variables.$lightGray;
+                font-size: 1.5rem;
+
+                @media (max-width: 465px) {
+                    font-size: 1rem;
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+section.featured {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to top, #1b1b1b 0%, #373737 100%);
+}
+section.featured .featured-item {
+  margin-top: -9.3rem;
+  z-index: 1;
+}
+section.featured .featured-item p {
+  max-width: 300px;
+  margin: auto;
+}

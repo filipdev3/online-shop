@@ -1,0 +1,17 @@
+@use "variables";
+
+@use "layout/base";
+@use "layout/header";
+@use "layout/footer";
+
+@use "sections/hero";
+@use "sections/featured";
+@use "sections/products";
+@use "sections/keyboard-hero";
+@use "sections/products-sale";
+@use "sections/headset-hero";
+@use "sections/mice-hero";
+@use "sections/mousepad-hero";
+
+@use "features/search";
+@use "features/loader";

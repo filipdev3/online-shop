@@ -1,0 +1,178 @@
+@use "./variables";
+
+header {
+    background-color: variables.$black;
+
+    .pre-header {
+        background: linear-gradient(to right, rgba(6,6,6,1) 0%, rgba(46,46,46,1) 100%);
+        height: 25px;
+        padding-top: 0.3rem;
+
+        ul {
+            list-style: none;
+            float: right;
+
+            li {
+                display: inline-block;
+                margin-right: 1.25rem;
+
+                &:first-child {
+                    a {
+                        color: variables.$orange;
+                    }
+                }
+
+                a {
+                    color: variables.$gray;
+                    text-decoration: none;
+
+                    @media (max-width: 375px) {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+         
+        background-color: variables.$black;
+        width: 100%;
+        outline: none;
+        z-index: 2;
+        position: relative;
+
+        @media (max-width: 375px) {
+            width: 100%;
+        }
+
+        &.fixed-nav {
+            position: fixed;
+            top: 0;
+            transition: 0.3s;
+
+            @media (max-width: variables.$md) {
+                position: initial;
+            }
+        }
+
+        .hamburger-menu-button {
+            background-color: transparent;
+            color: variables.$white;
+            border: none;
+            font-size: 1rem;
+            display: none;
+            float: left;
+
+            .fa-times {
+                display: none;
+            }
+
+            &.opened {
+                .fa-times {
+                    display: block;
+                }
+
+                .fa-bars {
+                    display: none;
+                }
+            }
+
+
+            @media (max-width: variables.$md) {
+                display: inline-block;
+                margin-top: 0.8rem;
+                margin-left: 1rem;
+            }
+        }
+
+        ul {
+            list-style: none;
+            float: left;
+
+            @media (max-width: variables.$md) {
+                display: none;
+                width: 100%;
+                margin-top: 1rem;
+                background-color: variables.$black;
+            }
+
+            li {
+                display: inline-block;
+                margin-left: 1.8rem;
+                position: relative;
+                top: -20px;
+
+                &:first-child {
+                    top: -2px;
+                }
+
+                &:first-child {
+                    a:hover {
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+
+                @media (max-width: variables.$md) {
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                    margin: auto;
+                }
+
+                a {
+                    color: variables.$white;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-family: variables.$roboto;
+                    position: relative;
+
+                    &:hover {
+                        &::after {
+                            display: block;
+                        }
+                    }
+
+                    &::after {
+                        content: '';
+                        display: none;
+                        background-color: variables.$white;
+                        height: 2px;
+                        width: 100%;
+                        position: absolute;
+                    }
+
+                    @media (max-width: variables.$md) {
+                        &:hover {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav-right-side {
+            float: right;
+            margin-top: 0.8rem;
+            margin-right: 1rem;
+
+            @media (max-width: variables.$md) {
+                margin-top: 0;
+                position: absolute;
+                right: 10px;
+                top: 15px;
+            }
+            
+            a {
+                color: variables.$white;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+

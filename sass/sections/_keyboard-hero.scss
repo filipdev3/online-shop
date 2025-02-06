@@ -1,0 +1,30 @@
+@use "../variables";
+
+section.keyboard-hero {
+    background: url("../../img/hero-background.webp") center center / cover;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+    margin-top: 50px;
+    text-align: center;
+    font-family: variables.$roboto;
+
+
+    h4 {
+        color: variables.$white;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    h1 {
+        color: variables.$white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 3rem;
+        letter-spacing: 4px;
+
+        @media (max-width: 426px) {
+            margin-left: 0.8rem;
+            margin-right: 0.8rem;
+        }
+    }
+}

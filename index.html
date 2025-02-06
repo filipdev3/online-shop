@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Shop</title>
+</head>
+<body>
+
+    <div class="loader-wrapper">
+        <div class="lds-facebook"><div></div><div></div><div></div></div>
+    </div>
+
+
+    <header>
+        <div class="pre-header">
+            <ul>
+                <li><a href="#">Our CVD response</a></li>
+                <li><a href="#">Downloads & Support</a></li>
+                <li><a href="#">EN</a></li>
+            </ul>
+        </div>
+        <nav>
+            <button id="hamburger-btn" class="hamburger-menu-button"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-times"></i></button>
+            <ul>
+                <li><a href="index.html"><img src="img/FILIP_logo_large_text.png" alt="logo"></a></li>
+                <li><a href="mice.html">Mice</a></li>
+                <li><a href="keyboards.html">Keyboards</a></li>
+                <li><a href="headset.html">Headsets</a></li>
+                <li><a href="mousepads.html">Mousepads</a></li>
+            </ul>
+
+            <div class="nav-right-side">
+                <a href="#" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Flip the <span>switch</span></h1>
+
+        <video preload="auto" muted="true" autoplay loop playsinline="true" src="video/hero-video4.mp4"></video>
+    </section>
+
+    <section class="featured">
+        <div class="featured-item" data-animation="animate__fadeInUp" data-animation-delay="0.3">
+
+            <img src="img/keyboard.png" alt="item1">
+            <h2>VULCAN TKL PRO</h2>
+            <p> Tenkeyless form factor
+                Titan Switch Optical
+                AIMO intelligent lighting engine
+                Mixer-style media controls 
+                Detachable braided USB-C cable
+            </p>
+            <a href="#">More Information</a>
+        </div>
+
+        <div class="featured-item" data-animation="animate__fadeInUp" data-animation-delay="0.5">
+            <img src="img/mouse.png" alt="item1">
+            <h2>BURST PRO</h2>
+            <p> Extreme lightweight shell - onli 68g
+                Titan Switch Optical speed & precision
+                PhantomFlexTM cable virtually disappears 
+                Heat-treated pure PTEF glides 
+            </p>
+            <a href="#">More Information</a>
+        </div>
+
+        <div class="featured-item" data-animation="animate__fadeInUp" data-animation-delay="0.7">
+            <img src="img/headset.png" alt="item1">
+            <h2>ELO 7.1 AIR</h2>
+            <p> Self-Adjusting Metal Headband
+                Glasses Friendly Memory Foam Cushions
+                Crystal clear TruSpeak mic technology 
+                Cross-platform Compatibility
+            </p>
+            <a href="#">More Information</a>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>At ROCCAT, we're passionate about developing premium gaming hardware that makes you play better. German engineering since 2007.</h2>
+
+        <div class="container">
+
+            <div class="product-item product-keyboard" data-animation="animate__fadeInLeft" data-animation-delay="0.3">
+                <div class="product-info">
+                    <h3>Vulcan pro</h3>
+                    <p>Optical RGB Gaming Keyboard</p>
+                </div>
+
+                <div class="overlay">
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+            <div class="product-item product-headset" data-animation="animate__fadeInRight" data-animation-delay="0.3">
+                <div class="product-info">
+                    <h3>Elo 7.1 USB</h3>
+                    <p>Surround Sound RGB Gaming Headset</p>
+                </div>
+
+                <div class="overlay">
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <img src="img/FILIP_logo.png" alt="logo">
+
+        <p class="copy-rights"><i class="fa-regular fa-copyright"></i> Filip Kulic 2024</p>
+
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+        </ul>
+        
+    </footer>
+    
+
+    <div class="search-wrapper">
+        <a href="#" id="close-search"><i class="fa-solid fa-xmark"></i></a>
+        <form id="search-form" action="">
+            <input type="text" placeholder="Keywords...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+    
+
+
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://kit.fontawesome.com/388c5686b7.js" crossorigin="anonymous"></script>
+<script src="js/animate.js"></script>
+</body>
+</html>
