@@ -2,7 +2,13 @@
 Frontend for online computer equipment shop
 
 ## Features and technologies
-Full responsive, HTML, SAAS, JS
+**Technologies**
+  - HTML, SAAS, JS
+
+**Features**
+  - Responsive design (flexbox)
+  - Animations (CSS)
+  - Cross-browser compatibility
 
 ## Installation
 To clone and run this project, follow these steps: 
